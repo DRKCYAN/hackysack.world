@@ -57,7 +57,7 @@ export default async function MarketplacePage() {
             {products.map((p) => (
               <article
                 key={p.id}
-                className="border-2 border-black hover:border-red transition-colors flex flex-col"
+                className="border-2 border-black hover:border-yellow transition-colors flex flex-col"
               >
                 <div className="aspect-square bg-black overflow-hidden">
                   {p.image_url ? (
@@ -85,7 +85,7 @@ export default async function MarketplacePage() {
                     href={p.buy_link || '#'}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="mt-5 block text-center bg-red text-white font-khand uppercase tracking-[0.2em] py-3 hover:bg-black transition-colors"
+                    className="mt-5 block text-center bg-red text-white font-khand uppercase tracking-[0.2em] py-3 hover:bg-yellow hover:text-black transition-colors"
                   >
                     Buy Now
                   </a>

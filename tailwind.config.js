@@ -11,6 +11,7 @@ module.exports = {
         black: '#0a0a0a',
         white: '#f5f5f5',
         red: '#CC0000',
+        yellow: '#FFD600',
       },
       fontFamily: {
         khand: ['Khand', 'system-ui', 'sans-serif'],

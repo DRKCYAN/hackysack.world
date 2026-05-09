@@ -22,7 +22,7 @@ export default function Footer() {
         <ul className="flex flex-wrap justify-center gap-x-8 gap-y-3 font-khand uppercase tracking-widest text-sm">
           {FOOTER_LINKS.map((l) => (
             <li key={l.href}>
-              <Link href={l.href} className="hover:text-red transition-colors">
+              <Link href={l.href} className="hover:text-yellow transition-colors">
                 {l.label}
               </Link>
             </li>

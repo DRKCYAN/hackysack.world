@@ -39,13 +39,13 @@ export default function HomePage() {
           <div className="mt-12 flex flex-wrap gap-4">
             <Link
               href="/marketplace"
-              className="bg-red text-white font-khand uppercase tracking-[0.2em] text-base lg:text-lg px-8 py-4 hover:bg-white hover:text-black transition-colors"
+              className="bg-red text-white font-khand uppercase tracking-[0.2em] text-base lg:text-lg px-8 py-4 hover:bg-yellow hover:text-black transition-colors"
             >
               Shop Now
             </Link>
             <Link
               href="/league"
-              className="border-2 border-white text-white font-khand uppercase tracking-[0.2em] text-base lg:text-lg px-8 py-4 hover:bg-red hover:border-red transition-colors"
+              className="border-2 border-white text-white font-khand uppercase tracking-[0.2em] text-base lg:text-lg px-8 py-4 hover:bg-yellow hover:text-black hover:border-yellow transition-colors"
             >
               Join the League
             </Link>
@@ -104,7 +104,7 @@ export default function HomePage() {
             {FEATURED_VIDEOS.map((v) => (
               <article
                 key={v.title}
-                className="border-2 border-white hover:border-red transition-colors"
+                className="border-2 border-white hover:border-yellow transition-colors"
               >
                 <div className="aspect-video bg-black border-b-2 border-red flex items-center justify-center">
                   <span className="font-khand uppercase text-2xl text-white opacity-40 tracking-widest">
@@ -124,7 +124,7 @@ export default function HomePage() {
           <div className="mt-12">
             <Link
               href="/skills"
-              className="inline-block bg-red text-white font-khand uppercase tracking-[0.2em] text-base lg:text-lg px-8 py-4 hover:bg-white hover:text-black transition-colors"
+              className="inline-block bg-red text-white font-khand uppercase tracking-[0.2em] text-base lg:text-lg px-8 py-4 hover:bg-yellow hover:text-black transition-colors"
             >
               See All Skills →
             </Link>
@@ -144,7 +144,7 @@ export default function HomePage() {
             {FEATURED_PRODUCTS.map((p) => (
               <article
                 key={p.name}
-                className="border-2 border-black hover:border-red transition-colors flex flex-col"
+                className="border-2 border-black hover:border-yellow transition-colors flex flex-col"
               >
                 <div className="aspect-square bg-black flex items-center justify-center">
                   <span className="font-khand uppercase text-xl lg:text-2xl text-white opacity-50 tracking-widest text-center px-4">
@@ -156,7 +156,7 @@ export default function HomePage() {
                   <div className="font-khand text-red text-4xl mt-2">{p.price}</div>
                   <button
                     type="button"
-                    className="mt-4 w-full bg-red text-white font-khand uppercase tracking-[0.2em] py-3 hover:bg-black transition-colors"
+                    className="mt-4 w-full bg-red text-white font-khand uppercase tracking-[0.2em] py-3 hover:bg-yellow hover:text-black transition-colors"
                   >
                     Buy Now
                   </button>
@@ -168,7 +168,7 @@ export default function HomePage() {
           <div className="mt-12">
             <Link
               href="/marketplace"
-              className="inline-block bg-black text-white font-khand uppercase tracking-[0.2em] text-base lg:text-lg px-8 py-4 hover:bg-red transition-colors"
+              className="inline-block bg-black text-white font-khand uppercase tracking-[0.2em] text-base lg:text-lg px-8 py-4 hover:bg-yellow hover:text-black transition-colors"
             >
               View All Products →
             </Link>
@@ -191,17 +191,17 @@ export default function HomePage() {
             {FEATURED_PLAYERS.map((p) => (
               <div
                 key={p.rank}
-                className="grid grid-cols-12 gap-4 items-center border-b border-red py-6"
+                className="grid grid-cols-12 gap-4 items-center border-b border-red py-6 group"
               >
-                <div className="font-khand text-red text-5xl sm:text-6xl lg:text-7xl col-span-3 sm:col-span-2">
+                <div className="font-khand text-red text-5xl sm:text-6xl lg:text-7xl col-span-3 sm:col-span-2 group-hover:text-yellow transition-colors">
                   #{p.rank}
                 </div>
                 <div className="col-span-5 sm:col-span-6">
-                  <div className="font-khand uppercase text-2xl lg:text-3xl">{p.name}</div>
+                  <div className="font-khand uppercase text-2xl lg:text-3xl group-hover:text-yellow transition-colors">{p.name}</div>
                   <div className="font-switzer text-sm opacity-75 mt-1">{p.location}</div>
                 </div>
                 <div className="col-span-4 text-right">
-                  <div className="font-khand text-red text-3xl lg:text-4xl">{p.followers}</div>
+                  <div className="font-khand text-red text-3xl lg:text-4xl group-hover:text-yellow transition-colors">{p.followers}</div>
                   <div className="font-switzer text-xs uppercase tracking-[0.2em] opacity-75 mt-1">
                     Followers
                   </div>
@@ -213,7 +213,7 @@ export default function HomePage() {
           <div className="mt-12">
             <Link
               href="/league"
-              className="inline-block bg-red text-white font-khand uppercase tracking-[0.2em] text-base lg:text-lg px-8 py-4 hover:bg-white hover:text-black transition-colors"
+              className="inline-block bg-red text-white font-khand uppercase tracking-[0.2em] text-base lg:text-lg px-8 py-4 hover:bg-yellow hover:text-black transition-colors"
             >
               See Full Rankings →
             </Link>

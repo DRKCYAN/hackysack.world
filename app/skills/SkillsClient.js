@@ -25,7 +25,7 @@ export default function SkillsClient({ videos, errorMessage }) {
               className={`font-khand uppercase tracking-[0.2em] text-sm px-6 py-3 border-2 transition-colors ${
                 isActive
                   ? 'bg-red text-white border-red'
-                  : 'bg-white text-black border-black hover:border-red hover:text-red'
+                  : 'bg-white text-black border-black hover:border-yellow hover:text-black hover:bg-yellow'
               }`}
             >
               {cat}
@@ -53,7 +53,7 @@ export default function SkillsClient({ videos, errorMessage }) {
         {filtered.map((v) => (
           <article
             key={v.id}
-            className="border-2 border-black hover:border-red transition-colors flex flex-col"
+            className="border-2 border-black hover:border-yellow transition-colors flex flex-col"
           >
             <div className="aspect-video bg-black">
               <iframe

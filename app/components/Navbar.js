@@ -54,7 +54,7 @@ export default function Navbar() {
                 <Link
                   href={link.href}
                   className={`hover-underline font-khand uppercase tracking-widest text-base ${
-                    active ? 'text-red is-active' : 'text-white hover:text-red'
+                    active ? 'text-red is-active' : 'text-white hover:text-yellow'
                   }`}
                 >
                   {link.label}
@@ -100,7 +100,7 @@ export default function Navbar() {
                     href={link.href}
                     onClick={() => setOpen(false)}
                     className={`font-khand uppercase tracking-widest text-4xl ${
-                      active ? 'text-red' : 'text-white hover:text-red'
+                      active ? 'text-red' : 'text-white hover:text-yellow'
                     }`}
                   >
                     {link.label}

@@ -63,7 +63,7 @@ export default async function LeaguePage() {
               {top3.map((p, i) => (
                 <article
                   key={p.id}
-                  className="border-2 border-black p-8 flex flex-col items-center text-center hover:border-red transition-colors"
+                  className="border-2 border-black p-8 flex flex-col items-center text-center hover:border-yellow transition-colors"
                 >
                   <div className="font-khand text-red text-7xl sm:text-8xl lg:text-9xl leading-none">
                     #{i + 1}
@@ -123,9 +123,9 @@ export default async function LeaguePage() {
                     {players.map((p, i) => (
                       <tr
                         key={p.id}
-                        className="border-b border-red last:border-b-0 align-middle"
+                        className="border-b border-red last:border-b-0 align-middle hover:bg-yellow hover:text-black transition-colors group"
                       >
-                        <td className="px-6 py-4 font-khand text-red text-2xl">#{i + 1}</td>
+                        <td className="px-6 py-4 font-khand text-red text-2xl group-hover:text-black transition-colors">#{i + 1}</td>
                         <td className="px-6 py-4">
                           <div className="font-khand uppercase text-lg">{p.name}</div>
                           {p.social_handle && (
@@ -137,7 +137,7 @@ export default async function LeaguePage() {
                         <td className="px-6 py-4 hidden md:table-cell font-switzer">
                           {p.location}
                         </td>
-                        <td className="px-6 py-4 hidden sm:table-cell font-khand uppercase tracking-[0.2em] text-sm text-red">
+                        <td className="px-6 py-4 hidden sm:table-cell font-khand uppercase tracking-[0.2em] text-sm text-red group-hover:text-black transition-colors">
                           {p.platform}
                         </td>
                         <td className="px-6 py-4 text-right font-khand text-2xl">
