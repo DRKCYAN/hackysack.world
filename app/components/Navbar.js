@@ -43,7 +43,7 @@ export default function Navbar() {
           href="/"
           className="font-khand text-white text-xl sm:text-2xl lg:text-3xl tracking-wide uppercase"
         >
-          Hacky Sack Central
+          Hackysack.world
         </Link>
 
         <ul className="hidden lg:flex items-center gap-10">

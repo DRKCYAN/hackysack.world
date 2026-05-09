@@ -1,5 +1,5 @@
 export const metadata = {
-  title: 'About — Hacky Sack Central',
+  title: 'About — Hackysack.world',
   description:
     "We're building the world's first central hub for hacky sack — connecting players, celebrating skills, and bringing the footbag community into a new era.",
 };
@@ -42,7 +42,7 @@ export default function AboutPage() {
 
       <TextSection heading="Our Mission">
         <p>
-          Hacky Sack Central exists for one reason: to give the footbag world a home. For decades the sport has lived in scattered circles — schoolyards, festivals, parks, parking lots. We're connecting those circles into one community, with the resources, recognition, and gear that the modern player deserves.
+          Hackysack.world exists for one reason: to give the footbag world a home. For decades the sport has lived in scattered circles — schoolyards, festivals, parks, parking lots. We're connecting those circles into one community, with the resources, recognition, and gear that the modern player deserves.
         </p>
       </TextSection>
 
@@ -58,7 +58,7 @@ export default function AboutPage() {
       <section className="bg-black text-white px-6 lg:px-16 py-32 lg:py-40">
         <div className="max-w-5xl mx-auto text-center">
           <p className="font-khand uppercase text-red text-5xl sm:text-6xl lg:text-8xl xl:text-9xl leading-[0.95]">
-            "Hacky Sack Is For Everyone."
+            "Spread sack not hate"
           </p>
         </div>
       </section>

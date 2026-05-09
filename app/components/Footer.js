@@ -13,7 +13,7 @@ export default function Footer() {
     <footer className="bg-black text-white border-t-2 border-red">
       <div className="max-w-6xl mx-auto px-6 py-16 flex flex-col items-center gap-6 text-center">
         <div className="font-khand uppercase text-3xl lg:text-5xl tracking-wide">
-          Hacky Sack Central
+          Hackysack.world
         </div>
         <div className="font-khand uppercase text-base lg:text-lg text-red tracking-[0.3em]">
           The Home of Hacky Sack.
@@ -29,7 +29,7 @@ export default function Footer() {
           ))}
         </ul>
         <div className="font-switzer text-xs uppercase tracking-[0.25em] opacity-75 pt-4">
-          © 2025 Hacky Sack Central
+          © 2026 Hackysack.world
         </div>
       </div>
     </footer>
